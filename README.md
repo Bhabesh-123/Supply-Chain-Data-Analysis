@@ -66,9 +66,10 @@ GROUP BY p.product_name
 ORDER BY total_revenue DESC;
 ```
 ![Top 10 Products](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/f3f50c73cef7255aaf6d69904beb6723de01ae0b/Top%2010%20Products%20By%20Revenue.png)
-![Power Bi](
+![Top 10 Ctegories](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/83de22192343389c7501716e488d5d6579533d30/Top%2010%20Categories%20By%20Revenue.png)
+![Top Ctegories and Products](
 
-   
+---   
 3. **Sales by region and store**
 4. **Month-over-month sales growth**
 5. **Rolling 3-month average revenue**
