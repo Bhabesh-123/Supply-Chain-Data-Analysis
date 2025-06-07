@@ -65,8 +65,8 @@ JOIN dim_products p ON fs.product_id = p.product_id
 GROUP BY p.product_name
 ORDER BY total_revenue DESC;
 ```
-![Top 10 Products](
-![Power Bi]
+![Top 10 Products](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/f3f50c73cef7255aaf6d69904beb6723de01ae0b/Top%2010%20Products%20By%20Revenue.png)
+![Power Bi](
 
    
 3. **Sales by region and store**
