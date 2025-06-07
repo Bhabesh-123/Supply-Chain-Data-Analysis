@@ -32,6 +32,24 @@ This project demonstrates how a data analyst can extract insights from a star-sc
 
 ---
 
+## Some KPI'S
+```sql
+--Total Revenue
+SELECT SUM(total_price) AS Total_Sale FROM fact_sales;
+
+--Total Products Price Sum
+SELECT SUM(unit_price)AS Products_Total_Price_Sum FROM dim_products;
+
+--Total Quantity of Products Sold.
+SELECT SUM(quantity)AS Total_Quantity FROM fact_sales;
+```
+---
+## Result View
+
+
+
+---
+
 ## 🔍 Key Analysis Performed
 
 1. **Top-selling products and categories**
