@@ -28,7 +28,7 @@ This project demonstrates how a data analyst can extract insights from a star-sc
 
 - `dim_products`, `dim_customers`, `dim_dates`, `dim_stores`, etc.: Dimension tables.
 
-![Star Schema](ERD_Diagram/supply_chain_star_schema.png)
+![Star Schema](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/b85d8ecd14e44da04292ec0d780ef4ea38d872c3/Supply%20chain%20stars%20schema.png)
 
 ---
 
