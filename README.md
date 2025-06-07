@@ -47,7 +47,7 @@ SELECT SUM(quantity)AS Total_Quantity FROM fact_sales;
 ```
 ---
 ## Result 
-![Power Bi](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/511f89f4439b3f498dc3361c50d667ea96643f6b/Power%20Bi%20First%20KPI.jpg)
+![Power Bi](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/173d5a6d71d0002036908edd3dc6848ecbc29bc2/Sale_Quantity%20sold%20And%20Product%20total%20Price.png)
 ![Sql View](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/511f89f4439b3f498dc3361c50d667ea96643f6b/Power%20Bi%20First%20KPI.png)
 
 
