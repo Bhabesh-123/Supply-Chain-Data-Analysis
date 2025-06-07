@@ -67,7 +67,7 @@ ORDER BY total_revenue DESC;
 ```
 ![Top 10 Products](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/f3f50c73cef7255aaf6d69904beb6723de01ae0b/Top%2010%20Products%20By%20Revenue.png)
 ![Top 10 Ctegories](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/83de22192343389c7501716e488d5d6579533d30/Top%2010%20Categories%20By%20Revenue.png)
-![Top Ctegories and Products](
+![Top Ctegories and Products](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/f3f50c73cef7255aaf6d69904beb6723de01ae0b/PowerBi%20%20Top%2010%20product%20and%20category%20by%20Revenue%20.png)
 
 ---   
 3. **Sales by region and store**
