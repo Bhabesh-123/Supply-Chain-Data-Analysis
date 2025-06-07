@@ -1,5 +1,5 @@
 # Supply-Chain-Data-Analysis
-![Project Workflow](
+![Project Workflow](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/0753697213dfcddb7fb6e91aaeff625a332d851d/%F0%9F%93%A6%20Project%20Title_%20Supply%20Chain%20Pipeline%20Dashboard%20-%20visual%20selection.png)
 
 # 🏭 Supply Chain Analytics Project (SQL + Power BI)
 
