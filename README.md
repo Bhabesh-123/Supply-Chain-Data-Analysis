@@ -1,4 +1,6 @@
 # Supply-Chain-Data-Analysis
+![Project Workflow](
+
 # 🏭 Supply Chain Analytics Project (SQL + Power BI)
 
 This project demonstrates how a data analyst can extract insights from a star-schema based **Supply Chain database** using **SQL Server** and visualize KPIs with **Power BI**.
