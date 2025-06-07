@@ -44,7 +44,7 @@ SELECT SUM(unit_price)AS Products_Total_Price_Sum FROM dim_products;
 SELECT SUM(quantity)AS Total_Quantity FROM fact_sales;
 ```
 ---
-## Result View
+## Result 
 ![Power Bi](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/511f89f4439b3f498dc3361c50d667ea96643f6b/Power%20Bi%20First%20KPI.jpg)
 ![Sql View](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/511f89f4439b3f498dc3361c50d667ea96643f6b/Power%20Bi%20First%20KPI.png)
 
@@ -54,10 +54,25 @@ SELECT SUM(quantity)AS Total_Quantity FROM fact_sales;
 ## 🔍 Key Analysis Performed
 
 1. **Top-selling products and categories**
-2. **Sales by region and store**
-3. **Month-over-month sales growth**
-4. **Rolling 3-month average revenue**
-5. **Customer retention & segmentation**
+```sql
+--top 10 products by revenue:
+
+SELECT TOP 10
+    p.product_name,
+    SUM(fs.total_price) AS total_revenue
+FROM fact_sales fs
+JOIN dim_products p ON fs.product_id = p.product_id
+GROUP BY p.product_name
+ORDER BY total_revenue DESC;
+```
+![Top 10 Products](
+![Power Bi]
+
+   
+3. **Sales by region and store**
+4. **Month-over-month sales growth**
+5. **Rolling 3-month average revenue**
+6. **Customer retention & segmentation**
 
 ---
 
