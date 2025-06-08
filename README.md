@@ -99,6 +99,10 @@ JOIN dim_stores s ON fs.store_id = s.store_id
 GROUP BY s.store_name
 ORDER BY Store_Wise_Total_Revenue DESC;
 ```
+![TOP 10 Stores Revenue](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/cbafe8a5c360e81176c09bbc933b18dcfb028fd0/Store%20wise%20Revenue.png)
+
+---
+*POWER BI RESULT*
 
 
 
