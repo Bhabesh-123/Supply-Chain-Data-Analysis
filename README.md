@@ -74,7 +74,24 @@ ORDER BY total_revenue DESC;
 ![Top Ctegories and Products](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/f3f50c73cef7255aaf6d69904beb6723de01ae0b/PowerBi%20%20Top%2010%20product%20and%20category%20by%20Revenue%20.png)
 
 ---   
-3. **Sales by region and store**
+3. **Sales by store**
+*Total Revenue From Stores* 
+```sql
+SELECT SUM(Store_Wise_Total_Revenue ) AS Stores_total_Revenue_
+FROM 
+(SELECT
+    s.store_name,
+    Sum(fs.total_price) AS Store_Wise_Total_Revenue 
+FROM Fact_sales fs
+JOIN dim_stores s ON fs.store_id = s.store_id
+GROUP BY s.store_name)
+AS Store_Revenue
+```
+
+
+ 
+
+   
 4. **Month-over-month sales growth**
 5. **Rolling 3-month average revenue**
 6. **Customer retention & segmentation**
