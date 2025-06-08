@@ -104,6 +104,8 @@ ORDER BY Store_Wise_Total_Revenue DESC;
 ---
 *POWER BI RESULT*
 
+![PBI result of Store wise revenue](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/9e9e50e44c8e0d4f0c94701352a389be251d9bd0/Power%20Bi%20%20Total%20Store%20wise%20Revenue%20with%20Grand%20Revenue%20Contribution.png)
+
 
 
  
