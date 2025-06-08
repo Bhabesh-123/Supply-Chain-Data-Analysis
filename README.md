@@ -87,6 +87,19 @@ JOIN dim_stores s ON fs.store_id = s.store_id
 GROUP BY s.store_name)
 AS Store_Revenue
 ```
+![Revenue Contribtion By Stores](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/e92891c2e10bd78a3ea2ef01d4c438bc3ba27df7/Stores%20Total%20Revenue.png)
+---
+*TOP 10 Stores IndiVidual ReveNue Contribution* 
+```sql
+SELECT TOP 10
+    s.store_name,
+    Sum(fs.total_price) AS Store_Wise_Total_Revenue 
+FROM Fact_sales fs
+JOIN dim_stores s ON fs.store_id = s.store_id
+GROUP BY s.store_name
+ORDER BY Store_Wise_Total_Revenue DESC;
+```
+
 
 
  
