@@ -156,6 +156,7 @@ The dashboard covers:
 
 ## Advance Analysis
 1. **Repeat Customer ID**
+
 *Try this to View the Repeated Customer*
 
 ```sql
@@ -169,7 +170,8 @@ HAVING COUNT(DISTINCT d.month + d.year * 100) > 1;
 ```
 ---
 2. **Repeat customer Vs One-Time Customer**
-    *WE will visualize This one On PBI*
+
+   *WE will visualize This one On PBI*
 
 ```sql
 WITH customer_months AS (
