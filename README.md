@@ -24,6 +24,9 @@ This project demonstrates how a data analyst can extract insights from a star-sc
 
 ---
 
+## 📁 CSV Files
+-[Fact Table]()
+
 ## 🧱 Star Schema Overview
 
 - `fact_sales`: Transactional sales data.
