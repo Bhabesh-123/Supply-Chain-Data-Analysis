@@ -117,6 +117,23 @@ JOIN dim_dates d ON fs.date_id = d.date_id
 GROUP BY d.year, d.month
 ORDER BY d.year, d.month;
 ```
+![]
+
+* To View the Full Sales of Months*
+```sql
+   SELECT  SUM(monthly_sales) AS Month_Wise_Total_Sales 
+FROM
+(SELECT 
+    d.year,
+    d.month,
+    SUM(fs.total_price) AS monthly_sales
+FROM fact_sales fs
+JOIN dim_dates d ON fs.date_id = d.date_id
+GROUP BY d.year, d.month
+)AS
+Total_Month_sales
+```
+
 
  
 
