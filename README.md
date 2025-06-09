@@ -237,6 +237,7 @@ Values: Count of customer_id
 
 ✔️ This will now visually match the SQL output.
 
+![PBI VISUAL](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/c5be3bc239b948a5d62061c3150efde7cb91a2db/PBI%20Repeat%20Vs%20One%20Time%20Customers.png)
 
    
    
