@@ -195,7 +195,48 @@ GROUP BY
         ELSE 'One-Time Customer'
     END;
 ```
-![Repeat Vs )ne Time Customer](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/046058a0ae5d12d03790341fa41f9babd98cd950/Repeat%20Customer%20Vs%20One-TimeCustomer%20.png)
+![Repeat Vs one Time Customer](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/046058a0ae5d12d03790341fa41f9babd98cd950/Repeat%20Customer%20Vs%20One-TimeCustomer%20.png)
+
+---
+**PBI Visual**
+
+Repeat vs One-Time Customers
+
+🔨 Steps:
+
+Create a calculated column in Power BI on fact_sales:
+
+**DAX**
+
+Purchase_Month = FORMAT(dim_dates[date], "YYYY-MM")
+
+
+*Create a summary table:*
+
+**DAX**
+
+CustomerMonthCount = 
+SUMMARIZE(
+    fact_sales,
+    fact_sales[customer_id],
+    "MonthsPurchased", DISTINCTCOUNT(fact_sales[Purchase_Month])
+)
+Create a calculated column on that table:
+
+**DAX**
+
+CustomerType = 
+IF([MonthsPurchased] > 1, "Repeat Customer", "One-Time Customer")
+
+---
+**Create a Donut Chart or Bar Chart:**
+
+Axis: CustomerType
+
+Values: Count of customer_id
+
+✔️ This will now visually match the SQL output.
+
 
    
    
