@@ -25,7 +25,7 @@ This project demonstrates how a data analyst can extract insights from a star-sc
 ---
 
 ## 📁 CSV Files
--[Fact Table](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/tree/4e8b133b2f8e6b7c35d7c83f9922bc64d0e57469/Csv%20Files)
+-[DATASET](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/tree/4e8b133b2f8e6b7c35d7c83f9922bc64d0e57469/Csv%20Files)
 
 ## 🧱 Star Schema Overview
 
