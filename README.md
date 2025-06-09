@@ -25,6 +25,7 @@ This project demonstrates how a data analyst can extract insights from a star-sc
 ---
 
 ## 📁 CSV Files
+*click the Link to see the dataset Files*
 -[DATASET](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/tree/4e8b133b2f8e6b7c35d7c83f9922bc64d0e57469/Csv%20Files)
 
 ## 🧱 Star Schema Overview
@@ -154,6 +155,48 @@ The dashboard covers:
 ---
 
 ## Advance Analysis
+1. **Repeat Customer ID**
+*Try this to View the Repeated Customer*
+
+```sql
+SELECT 
+    fs.customer_id,
+    COUNT(DISTINCT d.month + d.year * 100) AS active_months
+FROM fact_sales fs
+JOIN dim_dates d ON fs.date_id = d.date_id
+GROUP BY fs.customer_id
+HAVING COUNT(DISTINCT d.month + d.year * 100) > 1;
+```
+---
+2. **Repeat customer Vs One-Time Customer**
+    *WE will visualize This one On PBI*
+
+```sql
+WITH customer_months AS (
+    SELECT 
+        fs.customer_id,
+        COUNT(DISTINCT d.month + d.year * 100) AS active_months
+    FROM fact_sales fs
+    JOIN dim_dates d ON fs.date_id = d.date_id
+    GROUP BY fs.customer_id
+)
+SELECT 
+    CASE 
+        WHEN active_months > 11 THEN 'Repeat Customer'
+        ELSE 'One-Time Customer'
+    END AS customer_type,
+    COUNT(*) AS customer_count
+FROM customer_months
+GROUP BY 
+    CASE 
+        WHEN active_months > 11 THEN 'Repeat Customer'
+        ELSE 'One-Time Customer'
+    END;
+```
+
+   
+   
+   
 1. **Month-over-month sales growth**
 2. **Rolling 3-month average revenue**
 3. **Customer retention & segmentation**
