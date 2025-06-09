@@ -133,16 +133,9 @@ GROUP BY d.year, d.month
 )AS
 Total_Month_sales
 ```
+* PBI_RESULT *
+  
 ![Pbi](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/e4f62616ac865e59db12b06b5f06b090e7e577ed/Month%20Wise%20Sales%20.png)
-
----
- 
-
-   
-4. **Month-over-month sales growth**
-5. **Rolling 3-month average revenue**
-6. **Customer retention & segmentation**
-
 ---
 
 ## 📊 Power BI Dashboard
@@ -156,6 +149,11 @@ The dashboard covers:
 > You can find the `.pbix` file in the `PowerBI/` folder.
 
 ---
+
+## Advance Analysis
+1. **Month-over-month sales growth**
+2. **Rolling 3-month average revenue**
+3. **Customer retention & segmentation**
 
 ## 📁 Sample Advanced SQL Queries
 
