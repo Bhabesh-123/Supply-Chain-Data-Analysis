@@ -195,6 +195,7 @@ GROUP BY
         ELSE 'One-Time Customer'
     END;
 ```
+![Repeat Vs )ne Time Customer](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/046058a0ae5d12d03790341fa41f9babd98cd950/Repeat%20Customer%20Vs%20One-TimeCustomer%20.png)
 
    
    
