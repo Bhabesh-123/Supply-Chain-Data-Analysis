@@ -106,7 +106,17 @@ ORDER BY Store_Wise_Total_Revenue DESC;
 
 ![PBI result of Store wise revenue](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/9e9e50e44c8e0d4f0c94701352a389be251d9bd0/Power%20Bi%20%20Total%20Store%20wise%20Revenue%20with%20Grand%20Revenue%20Contribution.png)
 
-
+4. **Total Sales Per Month**
+ ```sql
+SELECT 
+    d.year,
+    d.month,
+    SUM(fs.total_price) AS monthly_sales
+FROM fact_sales fs
+JOIN dim_dates d ON fs.date_id = d.date_id
+GROUP BY d.year, d.month
+ORDER BY d.year, d.month;
+```
 
  
 
