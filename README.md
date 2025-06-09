@@ -117,9 +117,9 @@ JOIN dim_dates d ON fs.date_id = d.date_id
 GROUP BY d.year, d.month
 ORDER BY d.year, d.month;
 ```
-![]
+![Sql Result Monthwise Sales](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/e4f62616ac865e59db12b06b5f06b090e7e577ed/Total%20sales%20Per%20Month.png)
 
-* To View the Full Sales of Months*
+* To View the SUM(Full Sales of Months) in SQL*
 ```sql
    SELECT  SUM(monthly_sales) AS Month_Wise_Total_Sales 
 FROM
