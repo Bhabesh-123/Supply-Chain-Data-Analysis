@@ -133,8 +133,9 @@ GROUP BY d.year, d.month
 )AS
 Total_Month_sales
 ```
+![Pbi](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/e4f62616ac865e59db12b06b5f06b090e7e577ed/Month%20Wise%20Sales%20.png)
 
-
+---
  
 
    
