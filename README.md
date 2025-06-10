@@ -260,7 +260,7 @@ Then Select This Line and Execute-To View the Result .
 SELECT * FROM vw_monthly_category_sales;
  ```
 
-![]()
+![Month](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/14d0e8c9c153666b857f1ae1d87f147354cf6c64/SQL_analysis/View%20OnMonthly%20Category%20Sales%20.png)
 ---
 
 **📈 Year-over-Year Revenue Growth**
