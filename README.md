@@ -240,7 +240,60 @@ Values: Count of customer_id
 ![PBI VISUAL](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/c5be3bc239b948a5d62061c3150efde7cb91a2db/PBI%20Repeat%20Vs%20One%20Time%20Customers.png)
 
    
-   
+**✅ Create Views (Reusable Layers for BI Tools)**
+```sql
+CREATE VIEW vw_monthly_category_sales AS
+SELECT 
+    d.year,
+    d.month,
+    c.category_name,
+    SUM(fs.total_price) AS monthly_sales
+FROM fact_sales fs
+JOIN dim_dates d ON fs.date_id = d.date_id
+JOIN dim_products p ON fs.product_id = p.product_id
+JOIN dim_categories c ON p.category_id = c.category_id
+GROUP BY d.year, d.month, c.category_name;
+```
+
+Then Select This Line and Execute-To View the Result .
+```sql
+SELECT * FROM vw_monthly_category_sales;
+ ```
+
+![]()
+---
+
+**📈 Year-over-Year Revenue Growth**
+```sql
+CREATE VIEW vw_yearly_revenue AS
+SELECT 
+    d.year,
+    SUM(fs.total_price) AS total_revenue
+FROM fact_sales fs
+JOIN dim_dates d ON fs.date_id = d.date_id
+GROUP BY d.year;
+```
+Then Select This Line and Execute-To View the Result .
+```sql
+SELECT * FROM vw_yearly_revenue
+```
+
+![]()
+---
+
+**To Calculate Growth Year By Year In percentage(Previous Year To Current Year**
+```sql
+SELECT 
+    curr.year,
+    curr.total_revenue,
+    prev.total_revenue AS previous_year_revenue,
+    ROUND(((curr.total_revenue - prev.total_revenue) * 100.0) / NULLIF(prev.total_revenue, 0), 2) AS growth_percentage
+FROM vw_yearly_revenue curr
+LEFT JOIN vw_yearly_revenue prev ON curr.year = prev.year + 1
+ORDER BY curr.year;
+```
+![]()
+---
    
 1. **Month-over-month sales growth**
 2. **Rolling 3-month average revenue**
