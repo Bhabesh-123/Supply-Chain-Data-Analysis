@@ -278,7 +278,7 @@ Then Select This Line and Execute-To View the Result .
 SELECT * FROM vw_yearly_revenue
 ```
 
-![]()
+![](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/21b90d28959d8fbfdca0abc40dbb99195e5771b9/SQL_analysis/Year%20over%20Year%20revenue%20Growth.png)
 ---
 
 **To Calculate Growth Year By Year In percentage(Previous Year To Current Year**
