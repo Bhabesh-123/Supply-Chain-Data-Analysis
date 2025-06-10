@@ -292,7 +292,7 @@ FROM vw_yearly_revenue curr
 LEFT JOIN vw_yearly_revenue prev ON curr.year = prev.year + 1
 ORDER BY curr.year;
 ```
-![]()
+![](https://github.com/Bhabesh-123/Supply-Chain-Data-Analysis/blob/25c710dcd75e7b356fc82b0a66adaa8389cad8d0/SQL_analysis/Growth%20Percentage%20Year%20By%20year.png)
 ---
    
 1. **Month-over-month sales growth**
